@@ -1,0 +1,33 @@
+{% extends "auctions/layout.html" %}
+
+{% block title %}
+    Auctions - Create a auction list
+{% endblock %}
+
+{% block body %}
+    
+
+    <form action="{% url 'create' %}" method="post">
+        {% csrf_token %}
+        <div class="container py-3">
+            <h2>Create a auction list</h2>
+            <p>Please fill the form to create a auction list.</p>
+            
+            {% for field in form %}
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">{{ field.label }}</label>
+                <div class="col-sm-10">
+                    {{ field }}
+                </div>
+            </div>
+            {% endfor %}
+    
+            <div class="form-group row">
+                <div class="col-sm-10">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+        </div>     
+    </form>
+    
+{% endblock %}

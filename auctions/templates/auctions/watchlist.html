@@ -1,0 +1,51 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+
+<div class="container">
+    <h2>My Watchlist</h2>
+
+    {% if watchlist %}
+    <div><p>Your watchlist has {{ watchingNum }} items.</p></div>
+
+    <table class="table table-hover">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Auction listing ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Current Price</th>
+            <th scope="col">Starting Bid</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for auction in auctions %}
+        
+          <tr>
+            <th scope="row">{{ forloop.counter }}</th>
+            <td>{{ auction.id }}</td>
+            <td><a href="{% url 'listing' auction.id %}" style="color: inherit;">{{ auction.title }}</a></td>
+            <td>{{ auction.current_bid }}</td>
+            <td>{{ auction.starting_bid }}</td>
+            <td>
+                {% if auction.closed %}
+                    Closed
+                {% else %}
+                    Active
+                {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+
+      {% else %}
+
+      <p>No items in your watchlist.</p>
+
+      {% endif %}
+      
+</div>
+    
+{% endblock %}

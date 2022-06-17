@@ -1,0 +1,32 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+      
+    <div class="container py-3">
+        <h2>Active Listings</h2>
+        {% for auction in auctions %}
+        <div class="row">
+            <div class="col py-3 border light">
+                <a href="{% url 'listing' auction.id %}">
+                <img src="{{ auction.imageURL }}" alt="auction.title"> 
+                </a>
+            </div>
+            
+            <div class="col py-3 border light">
+                <h4><a href="{% url 'listing' auction.id %}" style="color: inherit;"><strong>{{ auction.title }}</strong></a></h4>
+                <div>Description:</div>
+                <div><p>{{ auction.description }}</p></div>
+                <div>Category:</div>
+                <div><p>{{ auction.category }}</p></div>
+                <div><strong style="font-size: 25px">Current price:</strong></div>
+                <div><strong style="font-size: 25px"><p>US $ {{ auction.current_bid }}</p></strong></div>
+                <div>Created on:</div>
+                <div><p>{{ auction.creation_date }}</p></div>
+            </div>    
+        </div>
+            
+        {% endfor %}
+    </div>
+
+    
+{% endblock %}

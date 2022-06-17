@@ -1,0 +1,47 @@
+body {
+    margin: 10px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.col img{
+    width: 28vw; 
+    min-width: 330px; 
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#watchlist_button {
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+}
+
+#watchlist_button2 {
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+}
+
+#button_group{
+   padding-left: 0;
+   max-width: 1920px
+}
+
+#comment_block{
+    width: 90%;
+}
+
+#comment_display{
+    width: 90%;
+}
+
+#listing_divider{
+    max-width: 1150px;
+}
