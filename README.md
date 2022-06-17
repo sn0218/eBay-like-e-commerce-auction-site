@@ -15,6 +15,7 @@ cd eBay-like-e-commerce-auction-site
 python manage.py runserver
 ```
 
+
 ## Tech Stack
 - Python Django web frmework
 - Bootstrap
