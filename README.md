@@ -1,5 +1,6 @@
 # eBay-like ecommerce auction site
 
+<img src="https://user-images.githubusercontent.com/48129546/174351062-a48ce4b2-f671-4363-9013-7c7a0168498b.png" width="600">
 ![image](https://user-images.githubusercontent.com/48129546/174351062-a48ce4b2-f671-4363-9013-7c7a0168498b.png)
 
 ![image](https://user-images.githubusercontent.com/48129546/174350942-fd73c068-1db7-4e91-8684-c4bf141bc325.png)
