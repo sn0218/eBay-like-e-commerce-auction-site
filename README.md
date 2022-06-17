@@ -43,4 +43,5 @@ Complete the implementation of your auction site. You must fulfill the following
 ![image](https://user-images.githubusercontent.com/48129546/174350942-fd73c068-1db7-4e91-8684-c4bf141bc325.png)
 
 Please watch the video demonstration in YouTube.
+
 :point_right: https://youtu.be/Jt426lB42ao
