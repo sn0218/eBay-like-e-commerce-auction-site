@@ -17,7 +17,7 @@ python manage.py runserver
 
 
 ## Tech Stack
-- Python Django web frmework
+- Python Django web framework
 - Bootstrap
 - sqlite3
 
